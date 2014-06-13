@@ -1,0 +1,40 @@
+Buyer - Seller
+Seller: forma de registrar
+
+Users
+	Inputs:
+		Number of Gladiators
+		Weapon Type
+
+
+#Gladiator (skill (int), Weapon(Type))
+	- Skill (Random)
+	- HP 
+		HP = (HP - Damage Received)
+	- Weapon
+
+
+#Weapon (axe, mace, sword, spear, dagger)
+	 
+	- Weapon Damage = Constant (40)
+	- Bonus Damage = if (weapon X > weapon Y) Weapon Damage + Constant (20)
+
+
+	Lose to > Weapon > Win against:
+
+	Dagger, Mace > Axe > Sword, Spear 
+	Sword, Spear > Mace > Dagger, Axe
+	Dagger, Axe > Sword > Spear, Mace 
+	Sword, Axe > Spear > Dagger, Mace
+	Spear, Mace > Dagger > Sword, Axe
+
+
+#Audience
+	- Satisfaction = G1 HP + G2 HP
+
+
+#King
+	- Final Judgment = 	if (Satisfaction > 60% HP)
+					lives 
+				else
+					dies
