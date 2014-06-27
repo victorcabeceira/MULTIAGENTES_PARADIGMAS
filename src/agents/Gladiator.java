@@ -172,7 +172,7 @@ public class Gladiator extends Agent {
 	private void sendMessage() {
 		msgSent = new ACLMessage(ACLMessage.INFORM);
 		msgSent.addReceiver(new AID(args[0].toString(), AID.ISLOCALNAME));
-		msgSent.setContent("Ready to figth!");
+		msgSent.setContent("Ready to fight!");
 		msgSent.setLanguage(this.getWeapon());
 		msgSent.setProtocol("100");
 		msgSent.setOntology(this.getSkillPoints() + "");
